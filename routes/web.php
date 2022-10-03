@@ -17,4 +17,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/media', 'MediaController@index')->name('media.index');
+Route::get('/media/{id}/comments', 'MediaController@index')->name('media.show');
 Route::get('/home', 'HomeController@index')->name('home');
